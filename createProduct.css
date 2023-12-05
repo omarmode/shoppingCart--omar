@@ -1,0 +1,18 @@
+.create {
+}
+.create input,
+.create select {
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 6px;
+  display: block;
+}
+.create input[type="submit"] {
+  background-color: #08f;
+  color: aliceblue;
+  cursor: pointer;
+}

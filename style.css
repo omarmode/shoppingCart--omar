@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contanier {
+  margin: auto;
+  width: 80%;
+}
+
+header {
+  background-color: gray;
+  padding: 10px 0;
+}
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  /*مسافه علي الشمال واليمين*/
+  align-items: center;
+}
+.content-header .brand {
+  font-size: 32px;
+  text-decoration: none;
+  color: aliceblue;
+  /* background-color: blueviolet; */
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav li a {
+  display: block;
+  min-width: 50px;
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  /* background-color: #08f; */
+}
+/***********form**********/
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*hero image*/
+  /* border: 2px solid gray; */
+}
+.section-form h2 {
+  font-size: 50px;
+  color: #08f;
+  letter-spacing: 2px;
+}
+.section-form form input {
+  display: block;
+  height: 50px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid gray;
+  outline: 0;
+  padding: 5px;
+}
+.section-form form input[type="submit"] {
+  /* height: auto; */
+  /* font-size: 25px; */
+  text-transform: uppercase;
+  cursor: pointer; /*لتغير شكل الموس*/
+}
+.section-form form input[type="submit"]:hover {
+  opacity: 0.8;
+}
+.section-form form p {
+  background-color: blueviolet;
+  font-size: 50px;
+  color: aliceblue;
+}
+nav ul#userinfo {
+  align-items: center;
+  display: none;
+}
+#userinfo li span {
+  color: antiquewhite;
+  font-size: 15px;
+}
+#userinfo li i {
+  cursor: pointer;
+  color: aliceblue;
+  position: relative;
+}
+#userinfo li .carts-products {
+  position: absolute;
+  /* transform: translate(-42%,0); */
+  width: 160px;
+  border: 1px solid darkgreen;
+  padding: 5px;
+  background-color: #aeaeae;
+  top: 40px;
+  /* visibility: hidden;
+   opacity: 0; */
+}
+/* #userinfo li i :hover #userinfo li .carts-products{
+    visibility: unhidden;
+    opacity: 1;
+    } */
+#userinfo li .carts-products a {
+  color: white;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* #userinfo li .carts-products{
+        display: block;
+    }
+  #userinfo .shopping-cart:hover .carts-products {
+    display: block;
+
+  } */
+.shopping-cart {
+  position: relative;
+}
+.carts-products {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s, visibility 2s;
+}
+#userinfo .shopping-cart:hover .carts-products {
+  opacity: 1;
+  visibility: visible;
+}
+#search {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: block;
+  padding: 5px;
+  border: 1 solid #08f;
+  border-radius: 10px;
+}
+/**products*******/
+.product {
+  float: left;
+  margin: 10px 0;
+  width: 60%;
+}
+.product-filter {
+  float: right;
+  width: 35%;
+  margin: 10px 0;
+}
+#size-filter {
+  width: 100%;
+  height: 40px;
+}
+.product-item {
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+.product-img {
+  width: 25%;
+  margin-right: 10px;
+}
+.product-item-decs a {
+  display: block;
+  font-size: 25px;
+  color: #08f;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-item-actions {
+  margin-left: auto;
+}
+.add-to-cart {
+  display: block;
+  background-color: #08f;
+  font-size: 14px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.product-item-actions .fav {
+  margin-top: 90%;
+  margin-left: 85%;
+  cursor: pointer;
+}
+
+.item-details img {
+  width: 100%;
+  margin: 10px 0;
+  border: 1 solid gray;
+  padding: 2px;
+  height: 400;
+  object-fit: cover; /*بتخلي الصوره تظبط علي المقاس بالظبط*/
+}
+.Edit-product {
+  display: block;
+  width: 140px;
+  background-color: #08f;
+  color: aliceblue;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+}
+
+/*** createProduct***/
+.create-product {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: #08f;
+  color: antiquewhite;
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  padding: 16px;
+  opacity: 1;
+}
+.create-product:haver {
+  opacity: 0.8;
+}
+
+.user-avatar {
+  width: 190px;
+  height: 180px;
+  border-radius: 30%;
+  margin: 10px 0;
+}
+#editProfileForm input {
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+  height: 40px;
+}
+#editProfileForm input[type="submit"] {
+  cursor: pointer;
+  background-color: #08f;
+  color: #000;
+}

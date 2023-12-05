@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>shopping cart | createProduct</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="regester.css" />
+    <link rel="stylesheet" href="createProduct.css" />
+
+    <!-- <link rel="stylesheet" href="login.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <!-- <i class="fas fa-shopping-cart"></i>
+    <i class="far fa-heart"></i> -->
+  <body>
+    <header>
+      <div class="contanier">
+        <div class="content-header">
+          <a href="index1.html" class="brand">shopping cart</a>
+          <nav>
+            <ul id="lienks">
+              <li><a href="login.html">sign in</a></li>
+              <li><a href="regester.html">sign up</a></li>
+            </ul>
+
+            <ul id="userinfo">
+              <li><a href="profile.html" id="user1"> </a></li>
+              <li><a href="FavProducts.html">favorite </a></li>
+              <li><a href="myProducts.html">myProducts </a></li>
+              <li><a href="#" id="log-out">log-out </a></li>
+              <li class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge"></span>
+                <div class="carts-products">
+                  <div></div>
+                  <!-- <p>laptop</p> -->
+                  <a href="cartproduct.html">view all products</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="create">
+      <div class="contanier">
+        <form id="create-form">
+          <input type="file" id="upLoad-image-file" />
+          <input type="text" placeholder="name..." id="product-name" />
+          <input type="text" placeholder="Discredit..." id="product-desc" />
+          <select name="" id="size">
+            <option value="" hidden>select Size</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select>
+          <input type="submit" value="create" />
+        </form>
+      </div>
+      <a href="createProduct.html" class="create-product"
+        ><i class="fa fa-plus"></i
+      ></a>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/createproduct.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cartmenu.js"></script>
+    <script src="js/favorit.js"></script>
+
+    <!-- <script src="js/general.js"></script> -->
+  </body>
+</html>

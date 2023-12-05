@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>shopping cart | shopping-cart page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="regester.css"> -->
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="contanier">
+        <div class="content-header">
+          <a href="index1.html" class="brand">shopping cart</a>
+          <nav>
+            <ul id="lienks">
+              <li><a href="login.html">sign in</a></li>
+              <li><a href="regester.html">sign up</a></li>
+            </ul>
+
+            <ul id="userinfo">
+              <li><a href="profile.html" id="user1"> </a></li>
+              <li><a href="FavProducts.html">favorite </a></li>
+              <li><a href="myProducts.html">myProducts </a></li>
+              <li><a href="#" id="log-out">log-out </a></li>
+              <li class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge"></span>
+                <div class="carts-products">
+                  <div></div>
+                  <!-- <p>laptop</p> -->
+                  <a href="cartproduct.html">view all products</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <div class="contanier">
+        <div class="product"></div>
+        <div class="noItems"></div>
+      </div>
+      <a href="createProduct.html" class="create-product"
+        ><i class="fa fa-plus"></i
+      ></a>
+    </section>
+    <script src="js/carts.js"></script>
+    <script src="js/cartmenu.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/user.js"></script>
+  </body>
+</html>
